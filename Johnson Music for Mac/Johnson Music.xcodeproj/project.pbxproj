@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		423BE1341EB6676E00EBFC92 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423BE1331EB6676E00EBFC92 /* AppKit.framework */; };
+		42573DA51A7AE35300FE294A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42573DA41A7AE35300FE294A /* AppDelegate.m */; };
+		42573DA71A7AE35300FE294A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42573DA61A7AE35300FE294A /* main.m */; };
+		42573DA91A7AE35300FE294A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42573DA81A7AE35300FE294A /* Images.xcassets */; };
+		42573DAC1A7AE35300FE294A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42573DAA1A7AE35300FE294A /* MainMenu.xib */; };
+		42573DB81A7AE35300FE294A /* Johnson_Music_for_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42573DB71A7AE35300FE294A /* Johnson_Music_for_MacTests.m */; };
+		42573DC21A7AE4A700FE294A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42573DC11A7AE4A700FE294A /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42573DB21A7AE35300FE294A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42573D961A7AE35300FE294A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42573D9D1A7AE35300FE294A;
+			remoteInfo = "Johnson Music for Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		423BE1331EB6676E00EBFC92 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		42573D9E1A7AE35300FE294A /* Johnson Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Johnson Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42573DA21A7AE35300FE294A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42573DA31A7AE35300FE294A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42573DA41A7AE35300FE294A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42573DA61A7AE35300FE294A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42573DA81A7AE35300FE294A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42573DAB1A7AE35300FE294A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		42573DB11A7AE35300FE294A /* Johnson MusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Johnson MusicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42573DB61A7AE35300FE294A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42573DB71A7AE35300FE294A /* Johnson_Music_for_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Johnson_Music_for_MacTests.m; sourceTree = "<group>"; };
+		42573DC11A7AE4A700FE294A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42573D9B1A7AE35300FE294A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423BE1341EB6676E00EBFC92 /* AppKit.framework in Frameworks */,
+				42573DC21A7AE4A700FE294A /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42573DAE1A7AE35300FE294A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		423BE1321EB6676D00EBFC92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				423BE1331EB6676E00EBFC92 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42573D951A7AE35300FE294A = {
+			isa = PBXGroup;
+			children = (
+				42573DC11A7AE4A700FE294A /* WebKit.framework */,
+				42573DA01A7AE35300FE294A /* Johnson Music for Mac */,
+				42573DB41A7AE35300FE294A /* Johnson Music for MacTests */,
+				42573D9F1A7AE35300FE294A /* Products */,
+				423BE1321EB6676D00EBFC92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42573D9F1A7AE35300FE294A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42573D9E1A7AE35300FE294A /* Johnson Music.app */,
+				42573DB11A7AE35300FE294A /* Johnson MusicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42573DA01A7AE35300FE294A /* Johnson Music for Mac */ = {
+			isa = PBXGroup;
+			children = (
+				42573DA31A7AE35300FE294A /* AppDelegate.h */,
+				42573DA41A7AE35300FE294A /* AppDelegate.m */,
+				42573DA81A7AE35300FE294A /* Images.xcassets */,
+				42573DAA1A7AE35300FE294A /* MainMenu.xib */,
+				42573DA11A7AE35300FE294A /* Supporting Files */,
+			);
+			path = "Johnson Music for Mac";
+			sourceTree = "<group>";
+		};
+		42573DA11A7AE35300FE294A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42573DA21A7AE35300FE294A /* Info.plist */,
+				42573DA61A7AE35300FE294A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42573DB41A7AE35300FE294A /* Johnson Music for MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				42573DB71A7AE35300FE294A /* Johnson_Music_for_MacTests.m */,
+				42573DB51A7AE35300FE294A /* Supporting Files */,
+			);
+			path = "Johnson Music for MacTests";
+			sourceTree = "<group>";
+		};
+		42573DB51A7AE35300FE294A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42573DB61A7AE35300FE294A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42573D9D1A7AE35300FE294A /* Johnson Music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42573DBB1A7AE35300FE294A /* Build configuration list for PBXNativeTarget "Johnson Music" */;
+			buildPhases = (
+				42573D9A1A7AE35300FE294A /* Sources */,
+				42573D9B1A7AE35300FE294A /* Frameworks */,
+				42573D9C1A7AE35300FE294A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Johnson Music";
+			productName = "Johnson Music for Mac";
+			productReference = 42573D9E1A7AE35300FE294A /* Johnson Music.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42573DB01A7AE35300FE294A /* Johnson MusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42573DBE1A7AE35300FE294A /* Build configuration list for PBXNativeTarget "Johnson MusicTests" */;
+			buildPhases = (
+				42573DAD1A7AE35300FE294A /* Sources */,
+				42573DAE1A7AE35300FE294A /* Frameworks */,
+				42573DAF1A7AE35300FE294A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42573DB31A7AE35300FE294A /* PBXTargetDependency */,
+			);
+			name = "Johnson MusicTests";
+			productName = "Johnson Music for MacTests";
+			productReference = 42573DB11A7AE35300FE294A /* Johnson MusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42573D961A7AE35300FE294A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Johnson Network";
+				TargetAttributes = {
+					42573D9D1A7AE35300FE294A = {
+						CreatedOnToolsVersion = 6.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					42573DB01A7AE35300FE294A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 42573D9D1A7AE35300FE294A;
+					};
+				};
+			};
+			buildConfigurationList = 42573D991A7AE35300FE294A /* Build configuration list for PBXProject "Johnson Music" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42573D951A7AE35300FE294A;
+			productRefGroup = 42573D9F1A7AE35300FE294A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42573D9D1A7AE35300FE294A /* Johnson Music */,
+				42573DB01A7AE35300FE294A /* Johnson MusicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42573D9C1A7AE35300FE294A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42573DA91A7AE35300FE294A /* Images.xcassets in Resources */,
+				42573DAC1A7AE35300FE294A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42573DAF1A7AE35300FE294A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42573D9A1A7AE35300FE294A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42573DA71A7AE35300FE294A /* main.m in Sources */,
+				42573DA51A7AE35300FE294A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42573DAD1A7AE35300FE294A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42573DB81A7AE35300FE294A /* Johnson_Music_for_MacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42573DB31A7AE35300FE294A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42573D9D1A7AE35300FE294A /* Johnson Music */;
+			targetProxy = 42573DB21A7AE35300FE294A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42573DAA1A7AE35300FE294A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42573DAB1A7AE35300FE294A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42573DB91A7AE35300FE294A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42573DBA1A7AE35300FE294A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42573DBC1A7AE35300FE294A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Johnson Music.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Johnson Music for Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = JN4.JohnsonMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		42573DBD1A7AE35300FE294A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Johnson Music.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Johnson Music for Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = JN4.JohnsonMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		42573DBF1A7AE35300FE294A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Johnson Music for MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JN4.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Johnson Music.app/Contents/MacOS/Johnson Music";
+			};
+			name = Debug;
+		};
+		42573DC01A7AE35300FE294A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Johnson Music for MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JN4.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Johnson Music.app/Contents/MacOS/Johnson Music";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42573D991A7AE35300FE294A /* Build configuration list for PBXProject "Johnson Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42573DB91A7AE35300FE294A /* Debug */,
+				42573DBA1A7AE35300FE294A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42573DBB1A7AE35300FE294A /* Build configuration list for PBXNativeTarget "Johnson Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42573DBC1A7AE35300FE294A /* Debug */,
+				42573DBD1A7AE35300FE294A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42573DBE1A7AE35300FE294A /* Build configuration list for PBXNativeTarget "Johnson MusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42573DBF1A7AE35300FE294A /* Debug */,
+				42573DC01A7AE35300FE294A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42573D961A7AE35300FE294A /* Project object */;
+}
