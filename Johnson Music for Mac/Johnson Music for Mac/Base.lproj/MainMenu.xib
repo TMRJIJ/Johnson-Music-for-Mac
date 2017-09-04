@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16F67a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16F71b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="12062"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
@@ -34,11 +34,6 @@
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
                                 </connections>
                             </menuItem>
-                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                            <menuItem title="Services" id="NMo-om-nkz">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
-                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
                             <menuItem title="Hide Johnson Music" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
@@ -57,7 +52,6 @@
                                     <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
                                 </connections>
                             </menuItem>
-                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
                             <menuItem title="Quit Johnson Music" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
@@ -340,23 +334,52 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem isSeparatorItem="YES" title="Navigate" enabled="YES" id="yY7-nS-v01">
-                    <menu key="submenu" title="Navigate" id="gwp-J4-iTL">
+                <menuItem title="Navigate" id="RQs-Kf-pub">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Navigate" id="NXE-Ve-unR">
                         <items>
-                            <menuItem title="Popular Albums" id="f8D-RR-cwu">
+                            <menuItem title="Popular Albums" id="VXi-I6-yVM">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="menuPopAlbumPressed:" target="Voe-Tx-rLC" id="EYD-sZ-eWr"/>
+                                    <action selector="menuPopAlbumPressed:" target="Voe-Tx-rLC" id="ehz-Ye-dvu"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Popular Genres" id="Lqd-fF-RYS">
+                            <menuItem title="Popular Genres" id="TWd-tz-jQJ">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="menuPopGenrePressed:" target="Voe-Tx-rLC" id="Urg-vG-ruC"/>
+                                </connections>
                             </menuItem>
-                            <menuItem title="Top 50" id="xi7-4D-J4x">
+                            <menuItem title="Top 50" id="CfV-yv-MUn">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="menuTop50Pressed:" target="Voe-Tx-rLC" id="ZYe-PO-QJc"/>
+                                </connections>
                             </menuItem>
-                            <menuItem title="New Releases" id="ySg-w2-kw8">
+                            <menuItem title="New Releases" id="y7g-QF-Tll">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="menuNewReleasesPressed:" target="Voe-Tx-rLC" id="OoB-Q2-cTx"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Ipd-pI-Tae"/>
+                            <menuItem title="Songs" id="p2R-vk-YjT">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="menuSongsPressed:" target="Voe-Tx-rLC" id="Es0-ji-cRs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Albums" id="XyM-vi-xKQ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="menuAlbumPressed:" target="Voe-Tx-rLC" id="j2U-IN-WS2"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Artists" id="uAD-nw-fMA">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="menuArtistPressed:" target="Voe-Tx-rLC" id="Ky0-EO-jdZ"/>
+                                </connections>
                             </menuItem>
                         </items>
                     </menu>
@@ -386,6 +409,98 @@
                 <subviews>
                     <webView translatesAutoresizingMaskIntoConstraints="NO" id="Zau-1L-hjd">
                         <rect key="frame" x="0.0" y="0.0" width="1150" height="640"/>
+                        <touchBar key="touchBar" id="eNl-1p-JEd">
+                            <touchBarItems>
+                                <touchBarItem id="Twh-PY-9Jq">
+                                    <viewController key="viewController" id="J60-TW-UyK">
+                                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sqb-Wu-LW8">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSRefreshTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S2v-4m-w35">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="reload:" target="Zau-1L-hjd" id="BsW-Rv-QTv"/>
+                                            </connections>
+                                        </button>
+                                    </viewController>
+                                    <size key="designTimeSize" width="72" height="30"/>
+                                </touchBarItem>
+                                <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFixedSpaceSmall" id="xNX-P7-uKr"/>
+                                <touchBarItem id="BrI-4w-U7x">
+                                    <viewController key="viewController" id="7G6-hu-FfI">
+                                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VWG-eU-zsf">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSGoLeftTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8Ma-Sc-lVt">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="goBack:" target="Zau-1L-hjd" id="msK-Jz-9yc"/>
+                                            </connections>
+                                        </button>
+                                    </viewController>
+                                    <size key="designTimeSize" width="72" height="30"/>
+                                </touchBarItem>
+                                <touchBarItem id="K48-Bx-d6C">
+                                    <viewController key="viewController" id="pA1-0e-88H">
+                                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DIy-bD-h32">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSGoRightTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="q3q-du-KLe">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="goForward:" target="Zau-1L-hjd" id="Pos-lf-wmO"/>
+                                            </connections>
+                                        </button>
+                                    </viewController>
+                                    <size key="designTimeSize" width="72" height="30"/>
+                                </touchBarItem>
+                                <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="Win-SE-Pto"/>
+                                <touchBarItem id="g5X-7X-d1T">
+                                    <viewController key="viewController" id="Oqj-HL-htL">
+                                        <textField key="view" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO0-dR-qeg">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="24"/>
+                                            <textFieldCell key="cell" borderStyle="bezel" alignment="center" title="Johnson Music" drawsBackground="YES" id="L2D-lM-331">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </viewController>
+                                    <size key="designTimeSize" width="120" height="24"/>
+                                </touchBarItem>
+                                <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="5je-0i-TFD"/>
+                                <touchBarItem id="3dC-1l-WvT">
+                                    <viewController key="viewController" id="nYr-rZ-aQ3">
+                                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="efm-FJ-Kzf">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                            <buttonCell key="cell" type="push" title="Songs" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ISM-xz-eju">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="touchbarSongsPressed:" target="Voe-Tx-rLC" id="gWt-dw-k89"/>
+                                            </connections>
+                                        </button>
+                                    </viewController>
+                                    <size key="designTimeSize" width="72" height="30"/>
+                                </touchBarItem>
+                                <touchBarItem id="kbj-us-xSe">
+                                    <viewController key="viewController" id="N3I-YC-MBN">
+                                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KF5-2s-FS1">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                            <buttonCell key="cell" type="push" title="Playlists" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hiy-fx-wJG">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                            </buttonCell>
+                                        </button>
+                                    </viewController>
+                                    <size key="designTimeSize" width="72" height="30"/>
+                                </touchBarItem>
+                            </touchBarItems>
+                        </touchBar>
                         <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
                             <nil key="identifier"/>
                         </webPreferences>
@@ -431,28 +546,10 @@
             </toolbar>
             <point key="canvasLocation" x="-2825" y="257"/>
         </window>
-        <touchBar id="NKr-4V-bDp">
-            <touchBarItems>
-                <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="t6i-d4-kH8"/>
-                <touchBarItem id="PWN-UA-iH6">
-                    <viewController key="viewController" id="s9N-Pq-KmL">
-                        <textField key="view" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ak-fh-UJo">
-                            <rect key="frame" x="0.0" y="0.0" width="112" height="24"/>
-                            <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Johnson Music" drawsBackground="YES" id="YE8-pj-rJW">
-                                <font key="font" usesAppearanceFont="YES"/>
-                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                    </viewController>
-                    <size key="designTimeSize" width="112" height="24"/>
-                </touchBarItem>
-                <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="VzW-45-IXl"/>
-            </touchBarItems>
-            <connections>
-                <outlet property="delegate" destination="Voe-Tx-rLC" id="HWw-qe-v5L"/>
-            </connections>
-            <point key="canvasLocation" x="-972" y="707"/>
-        </touchBar>
     </objects>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
+    </resources>
 </document>

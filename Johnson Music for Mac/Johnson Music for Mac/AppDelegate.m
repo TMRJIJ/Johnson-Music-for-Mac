@@ -65,13 +65,39 @@
     
     return YES;
 }
-- (IBAction)menuReopenPressed:(id)sender {
-     [_window makeKeyAndOrderFront:self];
+
+
+// Touch Bar Items
+- (IBAction)touchbarSongsPressed:(id)sender {
+    [self loadWebViewWithURL:@"http://johnsonmusic.xyz/songs"];
 }
 
-- (IBAction)menuPopAlbumPressed:(id)sender {
-    [self loadWebViewWithURL:@"http://johnsonmusic.xyz/top-albums"];
+//Menu Bar Items
+- (IBAction)menuPopAlbumPressed:(NSMenuItem *)sender {
+      [self loadWebViewWithURL:@"http://johnsonmusic.xyz/top-albums"];
 }
+- (IBAction)menuPopGenrePressed:(NSMenuItem *)sender {
+          [self loadWebViewWithURL:@"http://johnsonmusic.xyz/popular-genres"];
+}
+- (IBAction)menuTop50Pressed:(NSMenuItem *)sender {
+          [self loadWebViewWithURL:@"http://johnsonmusic.xyz/top-songs"];
+}
+- (IBAction)menuNewReleasesPressed:(NSMenuItem *)sender {
+          [self loadWebViewWithURL:@"http://johnsonmusic.xyz/new-releases"];
+}
+
+- (IBAction)menuSongsPressed:(NSMenuItem *)sender {
+          [self loadWebViewWithURL:@"http://johnsonmusic.xyz/songs"];
+}
+- (IBAction)menuAlbumPressed:(NSMenuItem *)sender {
+          [self loadWebViewWithURL:@"http://johnsonmusic.xyz/albums"];
+}
+- (IBAction)menuArtistPressed:(NSMenuItem *)sender {
+          [self loadWebViewWithURL:@"http://johnsonmusic.xyz/artists"];
+}
+
+
+
 
 -(void)loadWebViewWithURL:(NSString*)urlstr{
     

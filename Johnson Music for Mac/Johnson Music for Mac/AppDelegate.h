@@ -13,7 +13,6 @@
 @property (assign) IBOutlet WebView *webView;
 
 
-- (IBAction)menuPopAlbumPressed:(id)sender;
 
 @end
 

@@ -1,9 +1,15 @@
 # Johnson Music for Mac
-A simple Web Based Music Streaming App powered by Vebto's BeMusic - Music Streaming Engine Script
+A simple Web Based Music Streaming App powered by [Vebto's BeMusic - Music Streaming Engine Script](https://codecanyon.net/item/bemusic-music-streaming-engine/13616699?s_rank=3)
+
+Website Owner:
+Isiah Johnson (TMRJIJ)
+Web Developer / OS X Hackers Webmaster and Developer
 
 [View Website](http://JohnsonMusic.xyz/)
 
 ![alt tag](http://dl.osxhackers.net/.images/JNMusic/Mac%20App.png)
+
+# Description
 
 This app basically shows a personal version of Vebto's popular music streaming script. It is intended as open source (except the actual PHP script) so additional features can be added by others. 
 
@@ -15,3 +21,14 @@ Johnson Music lets you play your music on whichever device you’re using – yo
 _More Web Apps for other OSs coming soon._
 
 ![alt tag](http://dl.osxhackers.net/.images/JNMusic/JNMusic%20iMac%20Retina%20Display.png)
+
+# Announcements
+- N/A
+
+# Support
+
+As such, if something goes wrong (like the Display tab in System Preference crashing) or if this framework copy doesn't work. Please feel free to email me at support@osxhackers.net, let me know in the Issues Tab, or attempt it manually via Pike's original blog post.
+
+# Legal 
+
+Under the MIT License, this is open sourced and free for all to use, modify, and sell as long as you cite the direck link to this repository and the link to Vebto's Script hosted on CodeCanyon
