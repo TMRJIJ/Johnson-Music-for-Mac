@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Johnson Music for Mac
 //
-//  Created by Isiah Johnson on 1/29/17.
+//  Created by Isiah Johnson on 1/29/15.
 //  Copyright (c) 2017 Johnson Network. All rights reserved.
 //
 

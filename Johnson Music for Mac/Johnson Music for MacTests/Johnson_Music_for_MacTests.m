@@ -3,7 +3,7 @@
 //  Johnson Music for MacTests
 //
 //  Created by Isiah Johnson on 1/29/15.
-//  Copyright (c) 2015 Johnson Network. All rights reserved.
+//  Copyright (c) 2017 Johnson Network. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
