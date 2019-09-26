@@ -1,3 +1,12 @@
+#Alert: The following URLs are infringing on my Copyright and has made false DMCA claims against my repository through Google Search to claim ownership over my work:
+https://codecanyon.net/item/webtonative-advanced-mac-webview-application/20785299
+https://codecanyon.net/item/mac-application-bemusic/20445865
+
+Originally, an agreement was made that would allow the seller to continue using the work as long as the original repository is cited in documentation, however the DMCA Complaint which limits my SEO and Meta Tag Availiability has voided the deal.
+
+A DMCA Takedown Notice has been filed to Envato
+
+
 # Johnson Music for Mac
 A simple Web Based Music Streaming App powered by [Vebto's BeMusic - Music Streaming Engine Script](https://codecanyon.net/item/bemusic-music-streaming-engine/13616699?s_rank=3)
 
@@ -31,4 +40,4 @@ As such, if something goes wrong (like the Display tab in System Preference cras
 
 # Legal 
 
-Under the MIT License, this is open sourced and free for all to use, modify, and sell as long as you cite the direck link to this repository and the link to Vebto's Script hosted on CodeCanyon
+Under the MIT License, this is open sourced and free for all to use, modify, and sell as long as you cite the direck link to this repository
