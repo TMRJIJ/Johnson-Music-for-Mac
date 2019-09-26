@@ -1,10 +1,3 @@
-# Alert: The following URLs are infringing on my Copyright and has made false DMCA claims against my repository through Google Search to claim ownership over my work:
-https://codecanyon.net/item/webtonative-advanced-mac-webview-application/20785299
-https://codecanyon.net/item/mac-application-bemusic/20445865
-
-Originally, an agreement was made that would allow the seller to continue using the work as long as the original repository is cited in documentation, however the DMCA Complaint which limits my SEO and Meta Tag Availiability has voided the deal.
-
-A DMCA Takedown Notice has been filed to Envato
 
 
 # Johnson Music for Mac
