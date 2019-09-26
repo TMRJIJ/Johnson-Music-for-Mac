@@ -1,4 +1,4 @@
-#Alert: The following URLs are infringing on my Copyright and has made false DMCA claims against my repository through Google Search to claim ownership over my work:
+# Alert: The following URLs are infringing on my Copyright and has made false DMCA claims against my repository through Google Search to claim ownership over my work:
 https://codecanyon.net/item/webtonative-advanced-mac-webview-application/20785299
 https://codecanyon.net/item/mac-application-bemusic/20445865
 
